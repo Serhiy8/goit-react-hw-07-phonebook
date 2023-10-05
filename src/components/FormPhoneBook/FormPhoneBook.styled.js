@@ -16,7 +16,7 @@ export const InputContainerLabel = styled('label')({
   pointerEvent: 'none',
 });
 export const InputContainerButton = styled('button')({
-  minWidth: 85,
+  minWidth: 87,
   textAlign: 'center',
 });
 export const InputContainerInput = styled('input')({
