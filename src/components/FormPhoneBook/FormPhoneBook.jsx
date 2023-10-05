@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { addContact } from 'redux/operation';
-import { getContacts, selectError, selectIsLoading } from 'redux/selectors';
+import { selectContacts, selectError, selectIsLoading } from 'redux/selectors';
 import {
   InputContainer,
   InputContainerLabel,
@@ -13,7 +13,7 @@ import { RotatingLines } from 'react-loader-spinner';
 
 const FormPhonebook = () => {
   const dispatch = useDispatch();
-  const data = useSelector(getContacts);
+  const data = useSelector(selectContacts);
 
   const isLoading = useSelector(selectIsLoading);
   const error = useSelector(selectError);
