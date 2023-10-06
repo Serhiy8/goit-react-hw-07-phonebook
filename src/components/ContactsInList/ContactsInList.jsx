@@ -1,3 +1,11 @@
+import { useSelector } from 'react-redux';
+import { selectIsLoading } from 'redux/selectors';
+
 export const ContactsInList = ({ quantity }) => {
-  return <p>{`The number of contacts in the list: ${quantity}`}</p>;
+  const isLoading = useSelector(selectIsLoading);
+  return (
+    <p>{`The number of contacts in the list: ${
+      isLoading ? '...' : quantity
+    }`}</p>
+  );
 };

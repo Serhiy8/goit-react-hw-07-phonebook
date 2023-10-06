@@ -20,6 +20,7 @@ export const contactsSlice = createSlice({
   extraReducers: builder => {
     builder
       .addCase(fetchContacts.pending, state => {
+        state.isLoading = true;
         state.error = null;
       })
       .addCase(fetchContacts.fulfilled, (state, action) => {

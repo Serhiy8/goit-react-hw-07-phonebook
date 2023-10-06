@@ -1,25 +1,25 @@
 import styled from 'styled-components';
 
-export const InputContainer = styled('div')({
+const InputContainer = styled('div')({
   //   position: 'relative',
   //   marginBottom: 25,
 });
 
-export const FormContact = styled('form')({
+const FormContact = styled('form')({
   display: 'flex',
   gap: 15,
   marginBottom: 30,
 });
-export const InputContainerLabel = styled('label')({
+const InputContainerLabel = styled('label')({
   marginRight: 10,
   fontSize: 16,
   pointerEvent: 'none',
 });
-export const InputContainerButton = styled('button')({
+const InputContainerButton = styled('button')({
   minWidth: 87,
   textAlign: 'center',
 });
-export const InputContainerInput = styled('input')({
+const InputContainerInput = styled('input')({
   border: 0,
   borderBottom: '1px solid #555',
   background: 'transparent',
@@ -32,3 +32,11 @@ export const InputContainerInput = styled('input')({
     borderBottom: '1px solid green',
   },
 });
+
+export {
+  InputContainer,
+  FormContact,
+  InputContainerButton,
+  InputContainerInput,
+  InputContainerLabel,
+};

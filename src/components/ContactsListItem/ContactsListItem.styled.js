@@ -1,8 +1,10 @@
 import styled from 'styled-components';
 
-export const TextList = styled('p')({
+const TextList = styled('p')({
   display: 'inline-block',
 });
-export const ButtonList = styled('button')({
+const ButtonList = styled('button')({
   float: 'right',
 });
+
+export { TextList, ButtonList };
